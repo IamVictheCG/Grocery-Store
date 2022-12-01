@@ -1,4 +1,23 @@
+body {
+  margin: 0;
+}
+
+#nav {
+  border: 2px solid saddlebrown;
+}
+
 #nav-list {
-  display: flex;
   background-color: green;
+  list-style-type: none;
+  display: flex;
+  justify-content: space-around;
+  height: 50px;
+  align-items: center;
+  font-weight: bold;
+  font-size: 16px;
+  margin: 0;
+}
+#nav-list a {
+  color: white;
+  text-decoration: none;
 }/*# sourceMappingURL=styles.css.map */
