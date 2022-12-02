@@ -3,11 +3,10 @@ body {
 }
 
 #nav {
-  border: 2px solid saddlebrown;
+  background-color: green;
 }
 
 #nav-list {
-  background-color: green;
   list-style-type: none;
   display: flex;
   justify-content: space-around;
@@ -20,4 +19,13 @@ body {
 #nav-list a {
   color: white;
   text-decoration: none;
+}
+
+.main-con {
+  margin: auto;
+  background-image: url("main-image.jpeg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 99%;
+  height: 100vh;
 }/*# sourceMappingURL=styles.css.map */

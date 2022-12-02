@@ -3,11 +3,11 @@ body {
 }
 
 #nav {
-    border: 2px solid saddlebrown;
+    // border: 2px solid saddlebrown;
+    background-color: green;
 }
 
 #nav-list {
-    background-color: green;
     list-style-type: none;
     display: flex;
     justify-content: space-around;
@@ -23,3 +23,17 @@ body {
     }
 
 }
+
+.main-con {
+    margin: auto;
+    background-image: url("main-image.jpeg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    // border: 2px solid rgb(74, 3, 149);
+    width: 99%;
+    height: 100vh;
+}
+
+
+// .main-grocery {
+// }
