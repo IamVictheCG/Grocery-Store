@@ -34,6 +34,16 @@ h1 {
   text-align: center;
 }
 
+.groc {
+  position: absolute;
+  top: 250px;
+  left: 285px;
+  font-size: 58px;
+  color: white;
+  -webkit-animation: groc 1s linear;
+          animation: groc 1s linear;
+}
+
 .categories {
   overflow-y: hidden;
   display: flex;
@@ -165,5 +175,21 @@ form:hover {
   }
   100% {
     margin-top: 0px;
+  }
+}
+@-webkit-keyframes groc {
+  0% {
+    top: -10px;
+  }
+  100% {
+    top: 250px;
+  }
+}
+@keyframes groc {
+  0% {
+    top: -10px;
+  }
+  100% {
+    top: 250px;
   }
 }/*# sourceMappingURL=styles.css.map */

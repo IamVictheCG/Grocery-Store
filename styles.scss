@@ -37,6 +37,15 @@ h1 {
     text-align: center;
 }
 
+.groc {
+    position: absolute;
+    top: 250px;
+    left: 285px;
+    font-size: 58px;
+    color: white;
+    animation: groc 1s linear ;
+}
+
 .categories {
     // background-color: aqua;
     // border: 2px solid rgb(63, 212, 138);
@@ -192,6 +201,17 @@ form:hover {
 
     100% {
         margin-top: 0px;
+    }
+}
+
+@keyframes groc {
+    0% {
+        top: -10px;
+        // opacity: 0;
+    }
+    100% {
+        top: 250px;
+        // opacity: 0;
     }
 }
 
