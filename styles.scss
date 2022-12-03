@@ -331,6 +331,8 @@ form:hover {
     z-index: 6;
     width: 100%;
     // height: 20px;
+    animation: none;
+    transition: none;
     bottom: 0;
     text-align: center;
 }
@@ -386,7 +388,7 @@ form:hover {
 @media (max-width: 1007px) {
     body {
         background-color: white;
-        border: 2px solid salmon;
+        // border: 2px solid salmon; 
         margin: 0%;
         padding: 0;
         // overflow: hidden;
