@@ -3,7 +3,11 @@ body {
 }
 
 #nav {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
   background-color: green;
+  z-index: 2;
 }
 
 #nav-list {
@@ -113,23 +117,31 @@ h1 {
   color: rgb(21, 153, 109);
 }
 
+.section:hover {
+  color: white;
+}
+
 .media {
   background-color: rgb(17, 156, 38);
   width: 40px;
   height: 180px;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
   position: absolute;
   right: 0;
   top: 26%;
+  transition: height 0.8s, width 1s;
   -webkit-animation-timing-function: linear;
           animation-timing-function: linear;
   -webkit-animation-name: media1;
           animation-name: media1;
   -webkit-animation-iteration-count: 1;
           animation-iteration-count: 1;
-  -webkit-animation-duration: 3s;
-          animation-duration: 3s;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
 }
 .media .social {
+  transition: height 0.8s, width 1s;
   background-color: blue;
   width: 100%;
   height: 45px;
@@ -139,22 +151,45 @@ h1 {
   flex-direction: column;
 }
 .media #facebook {
+  color: white;
+  border-top-left-radius: 10px;
   background-color: rgb(8, 30, 200);
 }
+.media #facebook:hover {
+  border-top-left-radius: 10px;
+  background-color: rgb(249, 249, 249);
+  color: rgb(8, 30, 200);
+}
 .media #twitter {
+  color: white;
   background-color: rgb(40, 148, 206);
 }
+.media #twitter:hover {
+  background-color: white;
+  color: rgb(40, 148, 206);
+}
 .media #instagram {
+  color: white;
   background-color: rgb(204, 7, 33);
 }
+.media #instagram:hover {
+  background-color: white;
+  color: rgb(204, 7, 33);
+}
 .media #tiktok {
+  border-bottom-left-radius: 10px;
+  color: white;
   background-color: rgb(0, 0, 0);
+}
+.media #tiktok:hover {
+  border-bottom-left-radius: 10px;
+  background-color: white;
+  color: rgb(0, 0, 0);
 }
 .media i {
   display: block;
   padding: 10%;
   font-size: 30px;
-  color: white;
   -webkit-animation-timing-function: linear;
           animation-timing-function: linear;
   -webkit-animation-name: media2;
@@ -164,6 +199,15 @@ h1 {
   -webkit-animation-duration: 4s;
           animation-duration: 4s;
   transition: opacity 0.4s ease 0.4s;
+}
+
+.media:hover {
+  width: 90px;
+  height: 240px;
+}
+.media:hover .social {
+  width: 100%;
+  height: 60px;
 }
 
 form {

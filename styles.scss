@@ -4,7 +4,10 @@ body {
 
 #nav {
     // border: 2px solid saddlebrown;
+    position: sticky;
+    top: 0;
     background-color: green;
+    z-index: 2;
 }
 
 #nav-list {
@@ -58,6 +61,7 @@ h1 {
     font-size: 68px;
     font-weight: 900;
     color: rgb(0, 255, 166);
+    // color: rgb(255, 255, 255);
 
     animation: groc 1s linear ;
 }
@@ -129,21 +133,28 @@ h1 {
     }
 }
 
+.section:hover {
+    color: white;
+}
+
 .media {
     background-color: rgb(17, 156, 38);
     width: 40px;
     height: 180px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
     position: absolute;
     right: 0;
     top: 26%;
-    // transition: width 1s;
+    transition:  height 0.8s, width 1s;
     // animation: media 0.3s linear infinite;
     animation-timing-function: linear;
     animation-name: media1;
     animation-iteration-count: 1;
-    animation-duration: 3s;
+    animation-duration: 2s;
     
     .social {
+        transition:  height 0.8s, width 1s;
         background-color: blue;
         width: 100%;
         height: 45px;
@@ -153,36 +164,78 @@ h1 {
         flex-direction: column;
     }
 
+    //facebook
     #facebook {
         // border: 1px solid firebrick;
+        color: white;
+        border-top-left-radius: 10px;
         background-color: rgb(8, 30, 200);
     }
+    #facebook:hover {
+        // border: 1px solid firebrick;
+        border-top-left-radius: 10px;
+        background-color: rgb(249, 249, 249);
+        color: rgb(8, 30, 200);
+    }
+
+    //twitter
     #twitter {
         // border: 1px solid firebrick;
+        color: white;
         background-color: rgb(40, 148, 206);
     }
+    #twitter:hover {
+        // border: 1px solid firebrick;
+        background-color: white;
+        color: rgb(40, 148, 206);
+    }
+
+    //instagram
     #instagram {
         // border: 1px solid firebrick;
+        color: white;
         background-color: rgb(204, 7, 33);
     }
+    #instagram:hover {
+        // border: 1px solid firebrick;
+        background-color: white;
+        color: rgb(204, 7, 33);
+    }
+
+    //tiktok
     #tiktok {
         // border: 1px solid firebrick;
+        border-bottom-left-radius: 10px;
+        color: white;
         background-color: rgb(0, 0, 0);
+    }
+    #tiktok:hover {
+        // border: 1px solid firebrick;
+        border-bottom-left-radius: 10px;
+        background-color: white;
+        color: rgb(0, 0, 0);
     }
 
     i {
         display: block;
         padding: 10%;
         font-size: 30px;
-        // width: 55px;
-        // height: 55px;
-        color: white;
         animation-timing-function: linear;
         animation-name: media2;
         animation-iteration-count: 1;
         animation-duration: 4s;
         // opacity: 0;
         transition: opacity .4s ease .4s;
+    }
+}
+
+.media:hover {
+    width: 90px;
+    height: 240px;
+
+    .social {
+        width: 100%;
+        height: 60px;
     }
 }
 
