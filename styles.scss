@@ -131,28 +131,70 @@ h1 {
 
 .media {
     background-color: rgb(17, 156, 38);
-    width: fit-content;
+    width: 40px;
+    height: 180px;
     position: absolute;
     right: 0;
-    top: 20%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-
+    top: 26%;
+    // transition: width 1s;
+    // animation: media 0.3s linear infinite;
+    animation-timing-function: linear;
+    animation-name: media;
+    animation-iteration-count: infinite;
+    animation-duration: 1s;
+    
     .social {
         background-color: blue;
         width: 100%;
+        height: 45px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
     }
+
+    #facebook {
+        // border: 1px solid firebrick;
+        background-color: rgb(8, 30, 200);
+    }
+    #twitter {
+        // border: 1px solid firebrick;
+        background-color: rgb(40, 148, 206);
+    }
+    #instagram {
+        // border: 1px solid firebrick;
+        background-color: rgb(204, 7, 33);
+    }
+    #tiktok {
+        // border: 1px solid firebrick;
+        background-color: rgb(0, 0, 0);
+    }
+
     i {
+        display: block;
         padding: 10%;
-        font-size: 50px;
+        font-size: 30px;
         // width: 55px;
         // height: 55px;
-        color: red;
+        color: white;
+        opacity: 0;
+        transition: opacity .4s ease .4s;
     }
 }
 
+div.media {
+    width: 90px;
+    height: 300;
+    opacity: 1;
+
+    .social {
+        height: 75px;
+    }
+
+    i {
+        opacity: 1;
+    }
+}
 
 form {
     width: 260px;
@@ -259,5 +301,16 @@ form:hover {
     100% {
         top: 50%;
         // opacity: 0;
+    }
+}
+
+@keyframes media {
+    0% {
+        // top: -10px;
+        opacity: 1;
+    }
+    100% {
+        // top: 50%;
+        opacity: 1;
     }
 }
