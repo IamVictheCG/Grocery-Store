@@ -47,8 +47,8 @@ h1 {
 .groc {
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
   position: absolute;
-  top: 50%;
-  left: 25%;
+  top: 60%;
+  left: 19%;
   margin: auto;
   font-size: 68px;
   font-weight: 900;
@@ -111,6 +111,29 @@ h1 {
 .categories .view-more button:hover {
   border: rgb(21, 153, 109) solid 2px;
   color: rgb(21, 153, 109);
+}
+
+.media {
+  background-color: rgb(17, 156, 38);
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  position: absolute;
+  right: 0;
+  top: 20%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.media .social {
+  background-color: blue;
+  width: 100%;
+}
+.media i {
+  padding: 10%;
+  font-size: 50px;
+  color: red;
 }
 
 form {
