@@ -139,9 +139,9 @@ h1 {
     // transition: width 1s;
     // animation: media 0.3s linear infinite;
     animation-timing-function: linear;
-    animation-name: media;
-    animation-iteration-count: infinite;
-    animation-duration: 1s;
+    animation-name: media1;
+    animation-iteration-count: 1;
+    animation-duration: 3s;
     
     .social {
         background-color: blue;
@@ -177,22 +177,12 @@ h1 {
         // width: 55px;
         // height: 55px;
         color: white;
-        opacity: 0;
+        animation-timing-function: linear;
+        animation-name: media2;
+        animation-iteration-count: 1;
+        animation-duration: 4s;
+        // opacity: 0;
         transition: opacity .4s ease .4s;
-    }
-}
-
-div.media {
-    width: 90px;
-    height: 300;
-    opacity: 1;
-
-    .social {
-        height: 75px;
-    }
-
-    i {
-        opacity: 1;
     }
 }
 
@@ -304,12 +294,26 @@ form:hover {
     }
 }
 
-@keyframes media {
+@keyframes media1 {
     0% {
+        right: -100px;
         // top: -10px;
         opacity: 1;
     }
     100% {
+        right: 0;
+        // top: 50%;
+        opacity: 1;
+    }
+}
+@keyframes media2 {
+    0% {
+        right: -100px;
+        // top: -10px;
+        opacity: 0;
+    }
+    100% {
+        right: 0;
         // top: 50%;
         opacity: 1;
     }

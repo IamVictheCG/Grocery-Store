@@ -122,12 +122,12 @@ h1 {
   top: 26%;
   -webkit-animation-timing-function: linear;
           animation-timing-function: linear;
-  -webkit-animation-name: media;
-          animation-name: media;
-  -webkit-animation-iteration-count: infinite;
-          animation-iteration-count: infinite;
-  -webkit-animation-duration: 1s;
-          animation-duration: 1s;
+  -webkit-animation-name: media1;
+          animation-name: media1;
+  -webkit-animation-iteration-count: 1;
+          animation-iteration-count: 1;
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
 }
 .media .social {
   background-color: blue;
@@ -155,20 +155,15 @@ h1 {
   padding: 10%;
   font-size: 30px;
   color: white;
-  opacity: 0;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+  -webkit-animation-name: media2;
+          animation-name: media2;
+  -webkit-animation-iteration-count: 1;
+          animation-iteration-count: 1;
+  -webkit-animation-duration: 4s;
+          animation-duration: 4s;
   transition: opacity 0.4s ease 0.4s;
-}
-
-div.media {
-  width: 90px;
-  height: 300;
-  opacity: 1;
-}
-div.media .social {
-  height: 75px;
-}
-div.media i {
-  opacity: 1;
 }
 
 form {
@@ -271,19 +266,43 @@ form:hover {
     top: 50%;
   }
 }
-@-webkit-keyframes media {
+@-webkit-keyframes media1 {
   0% {
+    right: -100px;
     opacity: 1;
   }
   100% {
+    right: 0;
     opacity: 1;
   }
 }
-@keyframes media {
+@keyframes media1 {
   0% {
+    right: -100px;
     opacity: 1;
   }
   100% {
+    right: 0;
+    opacity: 1;
+  }
+}
+@-webkit-keyframes media2 {
+  0% {
+    right: -100px;
+    opacity: 0;
+  }
+  100% {
+    right: 0;
+    opacity: 1;
+  }
+}
+@keyframes media2 {
+  0% {
+    right: -100px;
+    opacity: 0;
+  }
+  100% {
+    right: 0;
     opacity: 1;
   }
 }/*# sourceMappingURL=styles.css.map */
