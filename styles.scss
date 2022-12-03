@@ -16,17 +16,29 @@ body {
     font-weight: bold;
     font-size: 16px;
     margin: 0;
-
+    
     a {
-    color: white;
+        padding: 4px;
+        border-radius: 3px;
+        color: white;
         text-decoration: none;
     }
 
+    
+    a:hover {
+        background-color: yellow;
+        color: green;
+    }
+    
+    a:active {
+        color: white;
+        background-color: red;
+    }
 }
 
 .main-con {
     margin: auto;
-    background-image: url("main-image.jpeg");
+    background-image: url("main-image4.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     width: 100%;
@@ -38,11 +50,17 @@ h1 {
 }
 
 .groc {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;   
     position: absolute;
-    top: 250px;
-    left: 285px;
-    font-size: 58px;
-    color: white;
+    top: 50%;
+    left: 25%;
+    margin: auto;
+    font-size: 68px;
+    font-weight: 900;
+    color: rgb(0, 255, 166);
+    // background: yellowgreen;
+    // color: yellowgreen;
+    // color: white;
     animation: groc 1s linear ;
 }
 
@@ -59,11 +77,6 @@ h1 {
     
     .section {
         border:  2px solid rgb(63, 212, 138);
-    //     // animation: products 1s linear;
-    //     animation-name: products;
-    //     animation-duration: 2s;
-    //     animation-timing-function: linear;
-    //     // animation-iteration-count: 2;
         background-color: rgb(63, 212, 138);
         width: 230px;
         height: fit-content;
@@ -103,12 +116,17 @@ h1 {
         border-bottom-left-radius: 10px;
         border-bottom-right-radius: 10px;
     
-        input {
+        button {
             background-color: rgb(63, 212, 138);
             border-radius: 5px;
             padding: 5px;
             border: none;
             color: white;
+        }
+
+        button:hover {
+            border: rgb(21, 153, 109) solid 2px;
+            color: rgb(21, 153, 109) 
         }
     }
 }
@@ -116,14 +134,15 @@ h1 {
 
 form {
     width: 260px;
-    height: 52px;
+    height: 50px;
     // border: 2px solid bisque;
-    border-radius: 10px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
     background-color: rgb(6, 111, 37);
     position: fixed;
     right: 0%;
     bottom: 0%;
-    transition: height 1s;
+    transition: height 0.6s;
 
     i {
         margin-top: 4px;
@@ -164,12 +183,12 @@ form {
         }
     
         label:nth-of-type(1) {
-            margin-bottom: 10px;
-            margin-top: 10px;
+            // margin-bottom: 5px;
+            margin-top: 5px;
         }
         input:nth-of-type(1) {
-            margin-bottom: 10px;
-            margin-top: 10px;
+            // margin-bottom: 5px;
+            margin-top: 5px;
         }
     }
     
@@ -186,11 +205,16 @@ form {
             border: none;
             color: white;
         }
+
+        input:hover {
+            border: rgb(21, 153, 109) solid 2px;
+            color: rgb(21, 153, 109);
+        }
     }
 }
 
 form:hover {
-    height: 290px;
+    height: 230px;
 }
 
 @keyframes products {
@@ -201,6 +225,7 @@ form:hover {
 
     100% {
         margin-top: 0px;
+        // margin-bottom: 160px;
     }
 }
 
@@ -210,7 +235,7 @@ form:hover {
         // opacity: 0;
     }
     100% {
-        top: 250px;
+        top: 50%;
         // opacity: 0;
     }
 }

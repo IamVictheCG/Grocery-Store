@@ -17,13 +17,23 @@ body {
   margin: 0;
 }
 #nav-list a {
+  padding: 4px;
+  border-radius: 3px;
   color: white;
   text-decoration: none;
+}
+#nav-list a:hover {
+  background-color: yellow;
+  color: green;
+}
+#nav-list a:active {
+  color: white;
+  background-color: red;
 }
 
 .main-con {
   margin: auto;
-  background-image: url("main-image.jpeg");
+  background-image: url("main-image4.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   width: 100%;
@@ -35,11 +45,14 @@ h1 {
 }
 
 .groc {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
   position: absolute;
-  top: 250px;
-  left: 285px;
-  font-size: 58px;
-  color: white;
+  top: 50%;
+  left: 25%;
+  margin: auto;
+  font-size: 68px;
+  font-weight: 900;
+  color: rgb(0, 255, 166);
   -webkit-animation: groc 1s linear;
           animation: groc 1s linear;
 }
@@ -88,23 +101,28 @@ h1 {
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
 }
-.categories .view-more input {
+.categories .view-more button {
   background-color: rgb(63, 212, 138);
   border-radius: 5px;
   padding: 5px;
   border: none;
   color: white;
 }
+.categories .view-more button:hover {
+  border: rgb(21, 153, 109) solid 2px;
+  color: rgb(21, 153, 109);
+}
 
 form {
   width: 260px;
-  height: 52px;
-  border-radius: 10px;
+  height: 50px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
   background-color: rgb(6, 111, 37);
   position: fixed;
   right: 0%;
   bottom: 0%;
-  transition: height 1s;
+  transition: height 0.6s;
 }
 form i {
   margin-top: 4px;
@@ -133,12 +151,10 @@ form .info .message {
   padding-bottom: 10px;
 }
 form .info label:nth-of-type(1) {
-  margin-bottom: 10px;
-  margin-top: 10px;
+  margin-top: 5px;
 }
 form .info input:nth-of-type(1) {
-  margin-bottom: 10px;
-  margin-top: 10px;
+  margin-top: 5px;
 }
 form .submit {
   background-color: rgb(21, 153, 109);
@@ -153,9 +169,13 @@ form .submit input {
   border: none;
   color: white;
 }
+form .submit input:hover {
+  border: rgb(21, 153, 109) solid 2px;
+  color: rgb(21, 153, 109);
+}
 
 form:hover {
-  height: 290px;
+  height: 230px;
 }
 
 @-webkit-keyframes products {
@@ -182,7 +202,7 @@ form:hover {
     top: -10px;
   }
   100% {
-    top: 250px;
+    top: 50%;
   }
 }
 @keyframes groc {
@@ -190,6 +210,6 @@ form:hover {
     top: -10px;
   }
   100% {
-    top: 250px;
+    top: 50%;
   }
 }/*# sourceMappingURL=styles.css.map */
