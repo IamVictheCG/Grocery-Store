@@ -516,51 +516,7 @@ form {
 
     .info {
         background-color: rgb(21, 153, 109);
-    
-    
-        
-        .names {
-            margin-bottom: 10px;
-            display: flex;
-            justify-content: space-between;
-            // border: 2px solid darkcyan;
-        }
-    
-        .message {
-            display: flex;
-            justify-content: space-between;
-            padding-bottom: 10px;
-            // border: 2px solid darkcyan;
-        }
-    
-        label:nth-of-type(1) {
-            // margin-bottom: 5px;
-            margin-top: 5px;
-        }
-        input:nth-of-type(1) {
-            // margin-bottom: 5px;
-            margin-top: 5px;
-        }
-    }
-    
-    .submit {
-        background-color: rgb(21, 153, 109);
-        display: flex;
-        justify-content: center;
-        padding-bottom: 10px;
-    
-        input {
-            background-color: rgb(63, 212, 138);
-            border-radius: 5px;
-            padding: 5px;
-            border: none;
-            color: white;
-        }
-
-        input:hover {
-            border: rgb(21, 153, 109) solid 2px;
-            color: rgb(21, 153, 109);
-        }
+        color: white;
     }
 }
 

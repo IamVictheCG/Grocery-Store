@@ -465,39 +465,7 @@ form:hover {
   }
   form .info {
     background-color: rgb(21, 153, 109);
-  }
-  form .info .names {
-    margin-bottom: 10px;
-    display: flex;
-    justify-content: space-between;
-  }
-  form .info .message {
-    display: flex;
-    justify-content: space-between;
-    padding-bottom: 10px;
-  }
-  form .info label:nth-of-type(1) {
-    margin-top: 5px;
-  }
-  form .info input:nth-of-type(1) {
-    margin-top: 5px;
-  }
-  form .submit {
-    background-color: rgb(21, 153, 109);
-    display: flex;
-    justify-content: center;
-    padding-bottom: 10px;
-  }
-  form .submit input {
-    background-color: rgb(63, 212, 138);
-    border-radius: 5px;
-    padding: 5px;
-    border: none;
     color: white;
-  }
-  form .submit input:hover {
-    border: rgb(21, 153, 109) solid 2px;
-    color: rgb(21, 153, 109);
   }
   form:hover {
     height: 280px;
