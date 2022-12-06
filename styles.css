@@ -53,6 +53,7 @@ h1 {
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
   position: absolute;
   top: 60%;
+  display: none;
   left: 19%;
   margin: auto;
   font-size: 68px;
@@ -213,11 +214,12 @@ h1 {
 
 form {
   width: 260px;
-  height: 67px;
+  height: 50px;
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
   background-color: rgb(6, 111, 37);
   position: fixed;
+  z-index: 0;
   right: 0%;
   bottom: 0%;
   transition: height 0.6s;
@@ -280,9 +282,8 @@ form:hover {
   display: block;
   background-color: gray;
   margin: 0;
-  position: -webkit-sticky;
-  position: sticky;
-  z-index: 6;
+  position: static;
+  z-index: 2;
   width: 100%;
   -webkit-animation: none;
           animation: none;
