@@ -126,8 +126,14 @@ h1 {
   border: none;
   color: white;
 }
+.categories .view-more button a {
+  text-decoration: none;
+  color: white;
+}
 .categories .view-more button:hover {
   border: rgb(21, 153, 109) solid 2px;
+}
+.categories .view-more button:hover a {
   color: rgb(21, 153, 109);
 }
 
@@ -226,7 +232,7 @@ h1 {
 
 form {
   width: 260px;
-  height: 50px;
+  height: 68px;
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
   background-color: rgb(47, 47, 47);
@@ -282,7 +288,7 @@ form .info .message textarea {
   border-radius: 5px;
   outline-offset: 2px;
   width: 140px;
-  resize: none;
+  margin-left: 5px;
 }
 form .info label:nth-of-type(1) {
   margin-top: 5px;
@@ -309,7 +315,7 @@ form .submit input:hover {
 }
 
 form:hover {
-  height: 230px;
+  height: 250px;
 }
 
 .copyright {
@@ -317,7 +323,7 @@ form:hover {
   background-color: rgb(116, 117, 117);
   color: white;
   margin: 0;
-  position: static;
+  position: fixed;
   z-index: 2;
   width: 100%;
   -webkit-animation: none;
@@ -497,17 +503,20 @@ form:hover {
     color: white;
   }
   form {
-    height: 67px;
+    height: 68px;
     transition: height 0.6s;
   }
   form .info {
     color: white;
   }
+  form .message textarea {
+    margin-left: 5px;
+  }
   form:hover {
-    height: 245px;
+    height: 250px;
   }
   .copyright {
-    position: relative;
+    position: fixed;
     z-index: 88;
   }
   @-webkit-keyframes products {
